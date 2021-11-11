@@ -1,0 +1,22 @@
+{
+  "name": "http-service",
+  "version": "1.0.0",
+  "description": "endocode_challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ac12644/http-service.git"
+  },
+  "author": "abhishek_chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ac12644/http-service/issues"
+  },
+  "homepage": "https://github.com/ac12644/http-service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
