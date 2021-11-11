@@ -36,7 +36,7 @@
 4. kubectl autoscale deployment hello-app --cpu-percent=80 --min=1 --max=5
 5. kubectl get pods ![](RackMultipart20211111-4-1tjzvei_html_45b97004abf9e719.png)
 
-## **Exposing**  **http-service**  **to the interne**** t**
+## **Exposing**  **http-service**  to the internet
 
 1. kubectl expose deployment http-service --name=http-service --type=LoadBalancer --port 80 --target-port 8080
 2. kubectl get service ![](RackMultipart20211111-4-1tjzvei_html_aca44782538f6779.png)
