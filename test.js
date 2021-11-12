@@ -3,7 +3,7 @@ const should = require('chai').should();
 const request = require('supertest');
 
 describe('test.js', () => {
-        describe('GET /', () => {
+        describe('GET /helloworld', () => {
                 it('responds with 200', (done) => {
                         request(app)
                         .get('/helloworld')
