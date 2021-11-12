@@ -1,10 +1,13 @@
 steps:
-- name: node
-  entrypoint: npm
-  args: ['install']
-- name: node
-  entrypoint: npm
-  args: ['test']
-- name: node
-  entrypoint: npm
-  args: ['run', 'build']
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'cloudrunservice'
+  - '--image'
+  - 'us-docker.pkg.dev/cloudrun/container/http-service'
+  - '--region'
+  - 'us-west1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
